@@ -1,0 +1,44 @@
+{
+  "fit_json": "/mnt/pci-0000:00:17.0-ata-6/VNS/RepairStudy/modelling/dmf_rww_ei_jax_gpu_bw_fc_only_20260824_bw_forest90_fixed_sigma_i0.json",
+  "data": "/mnt/pci-0000:00:17.0-ata-6/VNS/RepairStudy/modelling/VNS_active_only_exclude_07_09.npz",
+  "n_tr": 360,
+  "window_size": 60,
+  "window_overlap": 0.5,
+  "fixed_sigma": 0.001,
+  "fixed_i0": 0.377380565,
+  "bold_input": "S_E",
+  "rows": [
+    {
+      "model": "rWW-only BW",
+      "session": "baseline",
+      "fc_r": 0.18155628287850317,
+      "global_fEI": 1.0707644861977175,
+      "motor_fEI": 1.082164829194999,
+      "contra_fEI": 1.054114124454318,
+      "ipsi_fEI": 1.1102155339356803,
+      "global_dis_cri": 0.2982999354601414,
+      "motor_dis_cri": 0.3951205768575444,
+      "contra_dis_cri": 0.3970755419850942,
+      "ipsi_dis_cri": 0.3931656117299947,
+      "motor_internal_I_E": -0.39230582118034363,
+      "motor_internal_r_E": 7.578398704528809,
+      "motor_internal_S_E_over_S_I": 1.1626732349395752
+    },
+    {
+      "model": "rWW-only BW",
+      "session": "followup6w",
+      "fc_r": 0.18103660145733136,
+      "global_fEI": 1.0479375281169252,
+      "motor_fEI": 0.9498724080980322,
+      "contra_fEI": 0.9461627518644763,
+      "ipsi_fEI": 0.953582064331588,
+      "global_dis_cri": 0.30679476277928786,
+      "motor_dis_cri": 0.2443968574388438,
+      "contra_dis_cri": 0.25001700864902016,
+      "ipsi_dis_cri": 0.23877670622866742,
+      "motor_internal_I_E": 0.3548136353492737,
+      "motor_internal_r_E": 2.1643779277801514,
+      "motor_internal_S_E_over_S_I": 3.6150760650634766
+    }
+  ]
+}

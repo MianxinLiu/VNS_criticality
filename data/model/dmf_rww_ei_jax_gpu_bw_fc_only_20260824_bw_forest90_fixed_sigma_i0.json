@@ -1,0 +1,137 @@
+{
+  "data": "/mnt/pci-0000:00:17.0-ata-6/VNS/RepairStudy/modelling/VNS_active_only_exclude_07_09.npz",
+  "backend": "gpu",
+  "devices": [
+    "cuda:0"
+  ],
+  "param_names": [
+    "G",
+    "w_EE",
+    "w_EI",
+    "w_IE"
+  ],
+  "fixed": {
+    "sigma": 0.001,
+    "I0": 0.377380565
+  },
+  "observable": "Balloon-Windkessel BOLD",
+  "bold_input": "S_E",
+  "args": {
+    "data": "/mnt/pci-0000:00:17.0-ata-6/VNS/RepairStudy/modelling/VNS_active_only_exclude_07_09.npz",
+    "tag": "20260824_bw_forest90_fixed_sigma_i0",
+    "optimizer": "forest",
+    "n_calls": 90,
+    "n_initial_points": 14,
+    "n_candidates": 4,
+    "n_tr": 160,
+    "dt": 0.01,
+    "tr": 0.72,
+    "burn_s": 30.0,
+    "summary_start_s": 30.0,
+    "seed": 0,
+    "random_state": 0,
+    "fixed_sigma": 0.001,
+    "fixed_i0": 0.377380565,
+    "bold_input": "S_E",
+    "g_bounds": [
+      0.05,
+      5.0
+    ],
+    "w_ee_bounds": [
+      0.5,
+      2.5
+    ],
+    "w_ei_bounds": [
+      0.5,
+      2.5
+    ],
+    "w_ie_bounds": [
+      0.2,
+      10.0
+    ],
+    "bad_loss": 3.0,
+    "subject_sides": [
+      "R",
+      "R",
+      "L",
+      "R",
+      "L",
+      "L",
+      "R"
+    ]
+  },
+  "results": {
+    "baseline": {
+      "row": {
+        "mode": "rww_bw_only",
+        "session": "baseline",
+        "loss": 0.8636876644190492,
+        "fc_r": 0.1363123355809508,
+        "G": 0.2984292314859281,
+        "w_EE": 0.5391061348225239,
+        "w_EI": 2.458572510317109,
+        "w_IE": 2.9482085365129937,
+        "fixed_sigma": 0.001,
+        "fixed_I0": 0.377380565,
+        "global_I_E": -0.3763510584831238,
+        "motor_I_E": -0.39226704835891724,
+        "global_r_E": 7.398892879486084,
+        "motor_r_E": 7.578075408935547,
+        "global_S_E_over_S_I": 1.1675149202346802,
+        "motor_S_E_over_S_I": 1.1626875400543213,
+        "global_I_E_over_I_I": -3.947070360183716,
+        "motor_I_E_over_I_I": -4.1732916831970215,
+        "contra_motor_I_E": -0.39771221365247456,
+        "ipsi_motor_I_E": -0.3922670951911381,
+        "contra_motor_r_E": 7.643419129507882,
+        "ipsi_motor_r_E": 7.578074591500418,
+        "contra_motor_S_E_over_S_I": 1.1612495694841658,
+        "ipsi_motor_S_E_over_S_I": 1.1626874889646257,
+        "contra_motor_I_E_over_I_I": -4.291965178080967,
+        "ipsi_motor_I_E_over_I_I": -4.173291751316616
+      },
+      "params": [
+        0.2984292314859281,
+        0.5391061348225239,
+        2.458572510317109,
+        2.9482085365129937
+      ]
+    },
+    "followup6w": {
+      "row": {
+        "mode": "rww_bw_only",
+        "session": "followup6w",
+        "loss": 0.8716411801857644,
+        "fc_r": 0.1283588198142356,
+        "G": 0.2213070922502352,
+        "w_EE": 0.5834887514355774,
+        "w_EI": 0.6055122932928464,
+        "w_IE": 1.3574192097425946,
+        "fixed_sigma": 0.001,
+        "fixed_I0": 0.377380565,
+        "global_I_E": 0.3546881079673767,
+        "motor_I_E": 0.35481181740760803,
+        "global_r_E": 2.1315271854400635,
+        "motor_r_E": 2.164768695831299,
+        "global_S_E_over_S_I": 3.5871846675872803,
+        "motor_S_E_over_S_I": 3.6153013706207275,
+        "global_I_E_over_I_I": 1.4682215452194214,
+        "motor_I_E_over_I_I": 1.4691593647003174,
+        "contra_motor_I_E": 0.3548549498830523,
+        "ipsi_motor_I_E": 0.3548118088926588,
+        "contra_motor_r_E": 2.178297145026071,
+        "ipsi_motor_r_E": 2.1647688320704868,
+        "contra_motor_S_E_over_S_I": 3.6255172320774625,
+        "ipsi_motor_S_E_over_S_I": 3.6153015068599155,
+        "contra_motor_I_E_over_I_I": 1.4695137568882533,
+        "ipsi_motor_I_E_over_I_I": 1.469159381730216
+      },
+      "params": [
+        0.2213070922502352,
+        0.5834887514355774,
+        0.6055122932928464,
+        1.3574192097425946
+      ]
+    }
+  }
+}

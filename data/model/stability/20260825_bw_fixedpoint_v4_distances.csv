@@ -1,0 +1,9 @@
+session,param,fit_max_real_lambda,critical_ratio,distance_log_ratio,crossing_side
+baseline,G,-11.955592287246251,nan,nan,none
+baseline,w_EE,-11.955592287247969,nan,nan,none
+baseline,w_EI,-11.955592287245073,nan,nan,none
+baseline,w_IE,-11.955592287246022,nan,nan,none
+followup6w,G,-7.165619920548242,2.0917179149236285,0.7379856972082962,above
+followup6w,w_EE,-7.165619920548208,1.9999998746167928,0.6931471178683398,above
+followup6w,w_EI,-7.165619920548243,nan,nan,none
+followup6w,w_IE,-7.165619920548212,nan,nan,none
