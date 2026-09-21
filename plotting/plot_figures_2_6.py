@@ -5,8 +5,6 @@ from plot_function import (
     plot_figure3_fei,
     plot_figure4_complexity,
     plot_figure5_behavior,
-    plot_figure6_rww,
-    plot_figure6_rww_bw,
     plot_figure6_rww_bw_stability,
     setup_style,
 )
@@ -18,8 +16,6 @@ def main():
     plot_figure3_fei()
     plot_figure4_complexity()
     plot_figure5_behavior()
-    plot_figure6_rww()
-    plot_figure6_rww_bw()
     plot_figure6_rww_bw_stability()
 
 
