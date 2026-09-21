@@ -2,7 +2,7 @@
 
 ## Figure mapping
 
-- `plotting/plot_function.py`: primary renderer for manuscript Figures 2, 3, 4, 5 and 6. The current Figure 6 output is `plot_figure6_rww_bw_stability()`.
+- `plotting/plot_function.py`: primary renderer for manuscript Figures 2, 3, 4, 5 and 6. 
 - `plotting/plot_figures_2_6.py`: release entry point that renders manuscript Figures 2–6 and does not require supplementary-figure inputs.
 - `plotting/plot_figure5_bc_fdr.py`: retained manuscript Figure 5B/C sensitivity plot with raw and Benjamini–Hochberg FDR-corrected p values.
 
