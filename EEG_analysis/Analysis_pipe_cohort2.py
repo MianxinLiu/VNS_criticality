@@ -32,7 +32,7 @@ def parse_args():
     parser.add_argument(
         "--fea",
         default="fEI",
-        help="Feature name to load from results/<subject>/<fea>.npy, e.g. fEI or MSE.",
+        help="Feature name to load from data/cohort1/<subject>/<fea>.npy, e.g. fEI or MSE.",
     )
     parser.add_argument(
         "--hemi",
@@ -135,7 +135,7 @@ def main(fea, hemi, only_models=False):
         9, 9, 9, 9,
     ]
 
-    datapath = "/mnt/pci-0000:00:17.0-ata-6/VNS/project/results/"
+    datapath = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "cohort1"))
     sub = os.listdir(datapath)
     fea_label = fea
 

@@ -25,7 +25,7 @@ sub = os.listdir(workpath)
 # spectral exponents
 for sid in range(len(sub)):
     file = os.listdir(os.path.join(workpath, sub[sid]))
-    outpath = '/mnt/pci-0000:00:17.0-ata-6/VNS/project/results2/'
+    outpath = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "cohort2"))
 
     days = np.zeros(len(file))
     SE = np.zeros([len(file), 256])
@@ -90,7 +90,7 @@ for sid in range(len(sub)):
 # fEI/DFA/Hurst
 for sid in range(len(sub)):
     file = os.listdir(os.path.join(workpath, sub[sid]))
-    outpath = '/mnt/pci-0000:00:17.0-ata-6/VNS/project/results2/'
+    outpath = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "cohort2"))
 
     days = np.zeros(len(file))
     fEI = np.zeros([len(file), 256])
@@ -149,7 +149,7 @@ Mobj = EH.MSobject('DispEn')
 
 for sid in range(len(sub)):
     file = os.listdir(os.path.join(workpath, sub[sid]))
-    outpath = '/mnt/pci-0000:00:17.0-ata-6/VNS/project/results2/'
+    outpath = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "cohort2"))
 
     days = np.zeros(len(file))
     MSE = np.zeros([len(file), 256, 20])
@@ -190,4 +190,3 @@ for sid in range(len(sub)):
     index = np.argsort(days)
     # np.save(os.path.join(outpath, sub[sid], 'days.npy'), days[index])
     np.save(os.path.join(outpath, sub[sid], 'MSE.npy'), MSE[index,:])
-

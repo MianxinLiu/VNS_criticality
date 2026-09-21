@@ -20,7 +20,7 @@ def parse_args():
     parser.add_argument(
         "--fea",
         default="MSE",
-        help="Feature name to load from results2/<subject>/<fea>.npy, e.g. MSE or fEI.",
+        help="Feature name to load from data/cohort2/<subject>/<fea>.npy, e.g. MSE or fEI.",
     )
     parser.add_argument(
         "--hemi",
@@ -52,7 +52,7 @@ def main(fea, hemi):
 
     side = ["R", "R", "L", "R", "L", "L", "R", "R", "L"]
 
-    datapath = "/mnt/pci-0000:00:17.0-ata-6/VNS/project/results2/"
+    datapath = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "cohort2"))
     sub = os.listdir(datapath)
 
     index_all = np.zeros([9, 2, 256])
