@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from statsmodels.stats.multitest import multipletests
-import plot_manuscript_figures_2_6 as source
+import plot_function as source
 
 
 def main():
